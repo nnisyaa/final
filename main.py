@@ -1,19 +1,26 @@
-print("Do you want a free or a paid game?")
-print("Enter 1 if you want a free game")
-print("Enter 2 if you want a paid game")
-free_or_paid_game = int(input("Enter your choice"))
-if free_or_paid_game == 2:
-    money = int(input("How much money do you have?"))
-    print("Your balance is", money, "dollars")
-else:
-    print("h")
+# print("Do you want a free or a paid game?")
+# print("Enter 1 if you want a free game")
+# print("Enter 2 if you want a paid game")
+# free_or_paid_game = int(input("Enter your choice"))
+# if free_or_paid_game == 2:
+#     money = int(input("How much money do you have?"))
+#     print("Your balance is", money, "dollars")
+# else:
+#     print("Choose one from the list")
+#     print("Enter 1 for Final Fantasy XIV")
+#     print("Enter 2 Minecraft")
+#     print("Enter 3 Slay the Spire")
+#     print("Enter 4 Hunt: Showdown")
 
 
 
-my_games = []
+
+
+
 cost_of_the_game = 0
-
-
+free_choice = 0
+money = int(input("How much money do you have?"))
+print("Your balance is", money, "dollars")
 
 def buy_game():
     with open("games.txt", "r") as f:
@@ -37,8 +44,8 @@ def add_game():
     else:
         my_games.append(name_of_the_game)
 
-def delete_games:
-    
+# def delete_games:
+
 
 
 print("Enter 1 if you want first game")
@@ -61,19 +68,17 @@ else:
     print("Your choice is Elden Ring")
 
 
-add_game()
+my_games = []
+def add_games(game):
+    fd = open("users_games.txt", 'a')
+    # fd.write("The witcher 3")
+    my_games.append(fd.write("The witcher 3\n"))
+    fd.close()
+
+
+add_games(" The witcher 3\n")
 print(my_games)
 
-
-
-
-
-
-
-
-# def delete_game
-# def all_games
-# def user_games
 
 
 
